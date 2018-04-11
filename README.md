@@ -7,7 +7,10 @@ Topic:
 - sports
 - health
 - gaming
-- food 
+- food
+- fashion
+- travel
+- music 
 
 
 ### Dependencies
@@ -15,9 +18,14 @@ Topic:
 - scipy
 - sklearn
 - nltk
+	- nltk.download('stopwords')
+	- nltk.download('punkt')
 - punkt
 
 
 ### Source:
 - crawling tweets: [tweep] (https://github.com/haccer/tweep)
+<<<<<<< HEAD
+- classifier: [Tweet-Classifier] (https://github.com/Parassharmaa/Tweet-Classifier)
+=======
 - classifier: [Tweet-Classifier] (https://github.com/Parassharmaa/Tweet-Classifier)
