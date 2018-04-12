@@ -12,7 +12,8 @@ This script will scrap off
 	- emojis (enclosed with <> )
 '''
 def filter(text):
-	text = re.sub(r'.*UTC', '', text)	# removes UTC timestamps
+	text = re.sub(r'.*GMT ', '', text)	# removes UTC timestamps
+	text = re.sub(r'.*UTC ', '', text)	# removes UTC timestamps
 	text = re.sub(r'<.+?>', '', text)	# removes usernames and emojis
 	text = re.sub(r'http\S+', '', text)	# removes URLS
 	return text

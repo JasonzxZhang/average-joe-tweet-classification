@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:56d7d5dacbd59d78703848891cd8798266784d8cac77a67843fce69026923649
-size 78
+numpy
+scipy
+sklearn
+nltk
+aiohttp
+aiodns
+beautifulsoup4
+cchardet
+elasticsearch
+prettytable
