@@ -22,10 +22,11 @@ Topic:
 	- nltk.download('punkt')
 - punkt
 
+<!-- Add tweep requirements -->
+
 
 ### Source:
 - crawling tweets: [tweep] (https://github.com/haccer/tweep)
 <<<<<<< HEAD
 - classifier: [Tweet-Classifier] (https://github.com/Parassharmaa/Tweet-Classifier)
-=======
-- classifier: [Tweet-Classifier] (https://github.com/Parassharmaa/Tweet-Classifier)
+- http://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html
