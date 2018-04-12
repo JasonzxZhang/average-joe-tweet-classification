@@ -1,0 +1,8 @@
+Jasons-MacBook-Pro-2:test jason$ run test_filter.py 
+Files in queue:  ['technology.txt']
+Finished filtering in  12.467710971832275
+Finished filtering in  40.910074949264526
+
+
+Total lines: 386,161
+Total words: 11,364,323

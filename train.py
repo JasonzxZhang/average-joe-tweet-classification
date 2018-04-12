@@ -7,8 +7,8 @@ import pickle
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.classify.scikitlearn import SklearnClassifier
-from sklearn.svm import LinearSVC
 from sklearn.naive_bayes import MultinomialNB
+# from sklearn.svm import LinearSVC
 
 data_path = "data/tweets/processed"
 os.chdir(data_path)

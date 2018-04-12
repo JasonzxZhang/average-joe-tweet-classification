@@ -16,8 +16,8 @@ def filter(text):
 def process_data(file, filename):
 	# txt to list, separate by lines
 	listified_text = []
-	file = open(file).read()
-	for p in file.split('\n'):
+	f = open(file).read()
+	for p in f.split('\n'):
 		listified_text.append(p)
 
 	t0 = time.time()
@@ -51,5 +51,4 @@ if __name__ == "__main__":
 	print("Files in queue: ", raw_files)
 	for i, document in enumerate(raw_files):
 		filename = str(raw_files[i])
-		print(filename)
-		# process_data(document, filename)
+		process_data(document, filename)

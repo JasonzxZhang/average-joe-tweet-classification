@@ -44,10 +44,22 @@ def process_data(file, filename):
 
 if __name__ == "__main__":
 	# Iterates through all files
-	raw_data_path = "data"
+	raw_data_path = "data/tweets"
 	os.chdir(raw_data_path)
 	raw_files = glob.glob("*.txt")
 	print("Files in queue: ", raw_files)
 	for i, document in enumerate(raw_files):
 		filename = str(raw_files[i])
 		process_data(document, filename)
+
+
+# head -2500 business.txt > sliced/business.txt
+# head -2500 entertainment.txt > sliced/entertainment.txt
+# head -2500 fashion.txt > sliced/fashion.txt
+# head -2500 food.txt > sliced/food.txt
+# head -2500 gaming.txt > sliced/gaming.txt
+# head -2500 health.txt > sliced/health.txt
+# head -2500 music.txt > sliced/music.txt
+# head -2500 politics.txt > sliced/politics.txt
+# head -2500 sports.txt > sliced/sports.txt
+# head -2500 technology.txt > sliced/technology.txt
