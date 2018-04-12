@@ -44,7 +44,7 @@ def process_data(file, filename):
 
 if __name__ == "__main__":
 	# Iterates through all files
-	raw_data_path = "data/tweets"
+	raw_data_path = "data"
 	os.chdir(raw_data_path)
 	raw_files = glob.glob("*.txt")
 	print("Files in queue: ", raw_files)
