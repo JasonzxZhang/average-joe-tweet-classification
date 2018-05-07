@@ -1,8 +1,3 @@
-Jasons-MacBook-Pro-2:test jason$ run test_filter.py 
-Files in queue:  ['technology.txt']
-Finished filtering in  12.467710971832275
-Finished filtering in  40.910074949264526
-
-
-Total lines: 386,161
-Total words: 11,364,323
+version https://git-lfs.github.com/spec/v1
+oid sha256:3bec85dc83b294b6b00ece77da8139f535f52d80786ee557c4cb4377e9a9b437
+size 219

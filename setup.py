@@ -14,7 +14,8 @@ setup(
       'aiodns',
       'beautifulsoup4',
       'cchardet',
-      'elasticsearch'
+      'elasticsearch',
+      'prettytable'
     ],
 )
 
