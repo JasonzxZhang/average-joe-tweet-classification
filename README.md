@@ -9,7 +9,6 @@ Topic:
 - gaming
 - food
 - fashion
-- travel
 - music 
 
 
@@ -22,7 +21,12 @@ Topic:
 	- nltk.download('punkt')
 - punkt
 
-<!-- Add tweep requirements -->
+### Crawl Data
+```python3 tweep.py```
+default 500 tweets per category, filtered 
+
+```python3 train.py```
+```python3 classify_tweet.py```
 
 
 ### Source:
