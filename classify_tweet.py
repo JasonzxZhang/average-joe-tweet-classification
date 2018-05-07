@@ -33,6 +33,8 @@ def predict_topic(text=None):
 	# converts to set of words
 	token = nltk.word_tokenize(text.lower()) 
 
+	# TODO: add lemmatizer
+
 	# return the label with max probibility based on Bayes'
 	prediction = classifier.classify(document_features(token))
 
@@ -65,8 +67,10 @@ def document_features(document):
 	document_words = set(document)
 	features = {}
 	for word in word_features:
-		print 
-		features['contains(%s)' % word] = (word in document_words)
+		if word:
+			features['contains(%s)' % word] = (word in document_words)
+		else:
+			features['contains(%s)' % word] = False
 	return features
 
 def print_analysis(text=None, prediction=None, prob=None):

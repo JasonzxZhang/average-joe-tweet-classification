@@ -13,6 +13,7 @@ This script will scrap off
 '''
 def filter(text):
 	text = re.sub(r'.*UTC', '', text)	# removes UTC timestamps
+	text = re.sub(r'.*GMT', '', text)	# removes UTC timestamps
 	text = re.sub(r'<.+?>', '', text)	# removes usernames and emojis
 	text = re.sub(r'http\S+', '', text)	# removes URLS
 	return text
@@ -50,3 +51,14 @@ if __name__ == "__main__":
 	for i, document in enumerate(raw_files):
 		filename = str(raw_files[i])
 		process_data(document, filename)
+
+# head -5500 business.txt > sliced/business.txt
+# head -5500 entertainment.txt > sliced/entertainment.txt
+# head -5500 fashion.txt > sliced/fashion.txt
+# head -5500 food.txt > sliced/food.txt
+# head -5500 gaming.txt > sliced/gaming.txt
+# head -5500 health.txt > sliced/health.txt
+# head -5500 music.txt > sliced/music.txt
+# head -5500 politics.txt > sliced/politics.txt
+# head -5500 sports.txt > sliced/sports.txt
+# head -5500 technology.txt > sliced/technology.txt
