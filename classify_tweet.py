@@ -42,40 +42,40 @@ class Classifier(object):
 		token = nltk.word_tokenize(text.lower()) 
 
 		# return the label with max probibility based on Bayes'
-		prediction = classifier.classify(self.document_features(token))
+		prediction = self.classifier.classify(self.document_features(token))
 
 		# return a dict of all labels with non-zero probabilities
-		probDistI = classifier.prob_classify(self.document_features(token))
+		probDistI = self.classifier.prob_classify(self.document_features(token))
 		p_distribution = { 
 			str(label):probDistI.prob(label)
 			for label in probDistI.samples()
 		}
 		return (prediction, p_distribution)
 
-		def document_features(self, document):
-			'''
-			Classify topic based on input text
+	def document_features(self, document):
+		'''
+		Classify topic based on input text
 
-			Parameters:
-			-----------------------------------------------
-			document (str) - tweets to be analyzed
+		Parameters:
+		-----------------------------------------------
+		document (str) - tweets to be analyzed
 
-			Returns:
-			-----------------------------------------------
-			dict{str:bool} - 
-				a dict of "words" & "its existence in current trained document"
-				{'contains(label)':'existence'}
-					e.g.	dict {
-								'contains(hello)' : True,
-								'contains(world)' : False
-							}
-			'''
-			document_words = set(document)
-			features = {}
-			for word in word_features:
-				print 
-				features['contains(%s)' % word] = (word in document_words)
-			return features
+		Returns:
+		-----------------------------------------------
+		dict{str:bool} - 
+			a dict of "words" & "its existence in current trained document"
+			{'contains(label)':'existence'}
+				e.g.	dict {
+							'contains(hello)' : True,
+							'contains(world)' : False
+						}
+		'''
+		document_words = set(document)
+		features = {}
+		for word in self.word_features:
+			print 
+			features['contains(%s)' % word] = (word in document_words)
+		return features
 
 '''
 Backlog:
