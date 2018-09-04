@@ -37,8 +37,8 @@ We expanded topics to the following:
 ![workflow](pictures/workflow.png "workflow")
 
 
-1. Crawlign and filtering data
-> default 500 tweets per category, filtered. You may also use the [fetch_script](scripts/detch_script.sh) to crawl all 10 categories and filter them.
+1. Crawling and filtering data
+> default 500 tweets per category, filtered. You may also use the [fetch_script](scripts/fetch_script.sh) to crawl all 10 categories and filter them.
 >> ```python3 tweep.py```
 >> ```python3 filter_tweets.py```
 >> ![Sample_Tweet](pictures/sample_tweet.png "Sample_Tweet")
